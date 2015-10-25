@@ -1,10 +1,37 @@
 {
-  "name": "application-name",
-  "version": "1.0.0",
-  "description": "Application description.",
+  "name": "chevismo",
+  "version": "2.0.0",
+  "description": "Chevismo v2",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "Chevi",
+    "email": "yo@chevismo.com",
+    "url":  "https://new.chevismo.com"
+  },
+  "homepage": "https://new.chevismo.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chevismo/chevismo-meteor.git"
+  },
+  "engines": {
+    "node": ">= 0.10.9",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "fibers": "~1.0.0"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
   "scripts": {
     "start": "meteor --settings settings-development.json",
     "staging": "meteor deploy staging.meteor.com --settings settings-development.json",
     "production": "meteor deploy production.meteor.com --settings settings-production.json"
-  }
+  },
+  "main": "meteorshim.js"
 }
