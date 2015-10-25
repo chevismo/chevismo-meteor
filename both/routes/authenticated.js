@@ -15,10 +15,3 @@ authenticatedRoutes.route( '/', {
     BlazeLayout.render( 'default', { yield: 'index' } );
   }
 });
-
-authenticatedRoutes.route( '/dashboard', {
-  name: 'dashboard',
-  action() {
-    BlazeLayout.render( 'default', { yield: 'dashboard' } );
-  }
-});
