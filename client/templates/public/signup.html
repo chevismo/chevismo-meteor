@@ -1,21 +1,22 @@
 <template name="signup">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-4">
-      <h4 class="page-header">Sign Up</h4>
+      <h4 class="page-header">Registrate</h4>
       <form id="signup" class="signup">
+        <p class="alert alert-info">Por ahora no he migrado los datos de Chevismo, asi que las cuentas de usuario de alli no funcionan aqui (por ahora). Por otro lado: tranquilo, pronto el registro volverá a realizarse mediante /start</p>
         <div class="form-group">
-          <label for="emailAddress">Email Address</label>
-          <input type="email" name="emailAddress" class="form-control" placeholder="Email Address">
+          <label for="emailAddress">Email</label>
+          <input type="email" name="emailAddress" class="form-control" placeholder="Email...">
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" name="password" class="form-control" placeholder="Password">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" class="form-control" placeholder="Contraseña...">
         </div>
         <div class="form-group">
-          <input type="submit" class="btn btn-success" value="Sign Up">
+          <input type="submit" class="btn btn-success" value="Completar">
         </div>
       </form>
-      <p>Already have an account? <a href="{{pathFor 'login'}}">Log In</a>.</p>
+      <p>Ya estás registrado? <a href="{{pathFor 'login'}}">Inicia sesión</a>.</p>
     </div>
   </div>
 </template>
