@@ -20,12 +20,12 @@ let validation = ( template ) => {
     },
     messages: {
       emailAddress: {
-        required: 'Need an email address here.',
-        email: 'Is this email address legit?'
+        required: 'Se necesita un email.',
+        email: '¿Es correcto este email?'
       },
       password: {
-        required: 'Need a password here.',
-        minlength: 'Use at least six characters, please.'
+        required: 'Se necesita una contraseña.',
+        minlength: 'Usa al menos 6 caracteres, por favor.'
       }
     },
     submitHandler() { _handleSignup( template ); }
@@ -42,7 +42,7 @@ let _handleSignup = ( template ) => {
     if ( error ) {
       Bert.alert( error.reason, 'danger' );
     } else {
-      Bert.alert( 'Welcome!', 'success' );
+      Bert.alert( '¡Bienvenido!', 'success' );
     }
   });
 };
