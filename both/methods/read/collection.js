@@ -5,7 +5,7 @@ Meteor.methods({
     var document = Collection.findOne( argument );
 
     if ( !document ) {
-      throw new Meteor.Error( 'document-not-found', 'No documents found matching this query.' );
+      throw new Meteor.Error( 'document-not-found', 'No se han encontrado documentos que coincidan con la consulta.' );
     }
 
     return document;
