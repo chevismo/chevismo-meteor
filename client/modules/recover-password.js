@@ -16,8 +16,8 @@ let validation = ( template ) => {
     },
     messages: {
       emailAddress: {
-        required: 'Need an email address here.',
-        email: 'Is this email address legit?'
+        required: 'Se necesita un email.',
+        email: '¿Es correcto este email?'
       }
     },
     submitHandler() { _handleRecovery( template ); }
@@ -31,7 +31,7 @@ let _handleRecovery = ( template ) => {
     if ( error ) {
       Bert.alert( error.reason, 'warning' );
     } else {
-      Bert.alert( 'Check your inbox for a reset link!', 'success' );
+      Bert.alert( 'Comprueba tu bandeja de entrada.', 'success' );
     }
   });
 };
