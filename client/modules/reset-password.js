@@ -21,12 +21,12 @@ let validation = ( template ) => {
     },
     messages: {
       newPassword: {
-        required: "Enter a new password, please.",
-        minlength: "Use at least six characters, please."
+        required: "Escribe una nueva contraseña.",
+        minlength: "Usa al menos 6 caracteres, por favor."
       },
       repeatNewPassword: {
-        required: "Repeat your new password, please.",
-        equalTo: "Hmm, your passwords don't match. Try again?"
+        required: "Repite la nueva contraseña.",
+        equalTo: "¡Las contraseñas no coinciden!"
       }
     },
     submitHandler() { _handleReset( template ); }
@@ -41,7 +41,7 @@ let _handleReset = ( template ) => {
     if ( error ) {
       Bert.alert( error.reason, 'danger' );
     } else {
-      Bert.alert( 'Password reset!', 'success' );
+      Bert.alert( 'Contraseña restablecida.', 'success' );
     }
   });
 };
